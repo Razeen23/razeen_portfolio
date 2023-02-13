@@ -1,0 +1,125 @@
+
+ .card-container {
+  display: flex;
+  justify-content: space-between;}
+
+@media (max-width: 600px) {
+.card-container {
+  grid-template-columns: 1fr;
+}
+}
+.certi {
+    
+    align-self: start;
+    background-image: url(https://images.pexels.com/photos/842711/pexels-photo-842711.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-size: cover;
+    width: 190px;
+    height: 254px;
+    border-radius: 1em;
+    padding: 1.9rem;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    transition: 0.4s ease-out;
+    box-shadow: 0px 7px 20px rgba(43, 8, 37, 0.2);
+   }
+   
+   .certi:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* background: rgba(110, 61, 177, 0.4); */
+    z-index: 2;
+    transition: 0.5s;
+   }
+   
+   .certi-info {
+    text-align: center;
+    padding-left: 25%;
+    padding-top: 25%;
+    position: relative;
+    z-index: 3;
+    color: #ebdede;
+    opacity: 0;
+    transform: translateY(20%);
+    transition: 0.5s;
+   }
+   
+   /*Text*/
+   .text-title {
+    font-size: 2rem;
+    font-weight: 500;
+   }
+   
+   .text-body {
+    letter-spacing: 1px;
+    font-size: 1rem;
+    margin: 4px 0 10px 0;
+   }
+   
+   /*Button*/
+   .certii-button {
+    padding: 0.6rem;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    background: #ee9ca7;
+    color: white;
+    font-weight: bold;
+    transition: 0.4s ease;
+   }
+   
+   /*Image*/
+   .certi-img {
+    width: 20px;
+    height: 20px;
+    position:relative;
+    top: 0;
+    left: 0;
+    background: #ee9ca7;
+    background: linear-gradient(to bottom, #e7aeae, #ee9ca7);
+   }
+   
+   /*Hover*/
+   .certi:hover {
+    /* backdrop-filter: blur(5px); */
+    transform: translateY(5%);
+   }
+
+   .certi::before {
+    border-radius: 1em;
+    backdrop-filter: blur(0);
+   }
+   
+   .certi:hover::before {
+    border-radius: 1em;
+    backdrop-filter: blur(5px);
+    opacity: 1;
+   }
+   
+   .certi:hover .certi-info {
+    opacity: 1;
+    transform: translateY(0);
+   }
+   
+   .certi-button:hover {
+    position: relative;
+    background: rgba(232, 227, 227, 0.4);
+    color: #f5f5f5;
+   }
+
+   .certi-container {
+    display: flex; /* this creates a flex container for the row of cards */
+    flex-wrap: wrap; /* this causes the cards to wrap onto a new line when they run out of space */
+  }
+  
+  .certi {
+    flex: 1; /* this causes the cards to take up equal amounts of space within the container */
+    margin: 10px; /* this adds some space between the cards */
+  }
+
+ 

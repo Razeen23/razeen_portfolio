@@ -1,0 +1,55 @@
+
+
+
+/* #moving-bg {
+  background: linear-gradient(rgba(30, 109, 49, 0.473), rgba(140, 64, 142, 0.25),rgb(211, 234, 84),rgba(54, 75, 138));
+  
+  background-image: url(https://images.pexels.com/photos/733745/pexels-photo-733745.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    
+  animation: change-gradient 10s linear infinite;
+
+  } */
+
+  #moving-bg {
+    background: linear-gradient(90deg, #ff0000, #ffff00);
+    animation-name: change-gradient;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes change-gradient {
+    0% {
+        background: linear-gradient(rgb(105, 209, 213), rgb(205, 135, 207),rgb(173, 230, 199),rgba(54,75,138));
+    }
+    50% {
+        background: linear-gradient(rgb(144, 226, 163), rgb(215, 120, 218),rgb(231, 246, 159),rgba(54,75,138));
+    }
+    100% {
+        background: linear-gradient(rgb(203, 240, 212), rgb(227, 174, 229),rgb(234, 236, 222),rgba(54,75,138));
+    }
+}
+
+  
+.font-colour {
+    font-style: italic;
+    color: rgba(90, 18, 132, 0.878);
+}
+  
+.content{
+    color: rgb(59, 141, 174);
+}
+
+.text{
+  font-style: oblique;
+  color: rgb(85, 113, 177);
+}
+
+.text::first-letter{
+  font-style:italic;
+  color: brown;
+}
+
+.text:hover{
+  color: rgb(11, 70, 133);
+}
